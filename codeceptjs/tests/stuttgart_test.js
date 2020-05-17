@@ -1,5 +1,5 @@
 const allure = codeceptjs.container.plugins('allure');
-Feature('testing with codeceptjs');
+Feature('Search sulzer gmbh on google');
 
 Scenario('should search for "sulzer gmbh stuttgat" and click on link with a name "Stuttgart"', (I) => {
     allure.severity('blocker');

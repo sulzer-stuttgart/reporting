@@ -1,4 +1,4 @@
-Feature('testing with codeceptjs');
+Feature('Search sulzer gmbh on google');
 
 Scenario('should search for "sulzer gmbh" and click on link with a name "Standorte"', (I) => {
     I.amOnPage('https://google.com');

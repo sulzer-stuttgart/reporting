@@ -7,7 +7,9 @@
     "test": "npx codeceptjs run --steps",
     "test:mochawesome": "npx codeceptjs run --steps --reporter mochawesome",
     "test:allure": "npx codeceptjs run --steps  --plugins allure",
-    "report": "allure serve ./allure-results"
+    "report": "allure serve ./allure-results",
+    "server:install": "node_modules/selenium-standalone/bin/selenium-standalone install",
+    "server:start": "node_modules/selenium-standalone/bin/selenium-standalone start"
   },
   "keywords": [],
   "author": "Mustafa Masetic",

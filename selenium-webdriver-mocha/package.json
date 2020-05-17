@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/.bin/mocha ./example-with-mocha.js --timeout=15000",
-    "test:allure": "node ./node_modules/.bin/mocha ./example-with-mocha.js --reporter mocha-allure-reporter --timeout=15000",
-    "test:mochawesome": "node ./node_modules/.bin/mocha ./example-with-mocha.js --reporter mochawesome --timeout=15000",
+    "test": "node ./node_modules/.bin/mocha ./google_search_test.js --timeout=15000",
+    "test:allure": "node ./node_modules/.bin/mocha ./google_search_test.js --reporter mocha-allure-reporter --timeout=15000",
+    "test:mochawesome": "node ./node_modules/.bin/mocha ./google_search_test.js --reporter mochawesome --timeout=15000",
     "report": "allure serve ./allure-results"
   },
   "author": "Mustafa Masetic",

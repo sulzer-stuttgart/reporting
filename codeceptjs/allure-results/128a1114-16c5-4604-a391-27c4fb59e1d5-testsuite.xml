@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1589733423861' stop='1589733430937'>
+    <name>Search sulzer gmbh on google:</name>
+    <title>Search sulzer gmbh on google:</title>
+    <test-cases>
+        <test-case start='1589733423861' status='passed' stop='1589733430883'>
+            <name>should search for "sulzer gmbh" and click on link with a name "Standorte"</name>
+            <title>should search for "sulzer gmbh" and click on link with a name "Standorte"</title>
+            <labels>
+                <label name='testType' value='screenshotDiff'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1589733425099' status='passed' stop='1589733426472'>
+                    <name>I am on page "https://google.com"</name>
+                    <title>I am on page "https://google.com"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1589733426472' status='passed' stop='1589733426502'>
+                    <name>I wait for visible {"name":"q"}, 5</name>
+                    <title>I wait for visible {"name":"q"}, 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1589733426502' status='passed' stop='1589733426640'>
+                    <name>I fill field {"name":"q"}, "sulzer gmbh"</name>
+                    <title>I fill field {"name":"q"}, "sulzer gmbh"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1589733426640' status='passed' stop='1589733430164'>
+                    <name>I press key "Enter"</name>
+                    <title>I press key "Enter"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1589733430164' status='passed' stop='1589733430197'>
+                    <name>I wait for visible {xpath: .//a[contains(., 'Standorte')]}, 5</name>
+                    <title>I wait for visible {xpath: .//a[contains(., 'Standorte')]}, 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1589733430197' status='passed' stop='1589733430877'>
+                    <name>I click {xpath: .//a[contains(., 'Standorte')]}</name>
+                    <title>I click {xpath: .//a[contains(., 'Standorte')]}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1589733430878' status='passed' stop='1589733430883'>
+                    <name>I see in current url "https://www.sulzer.de/de/standorte/"</name>
+                    <title>I see in current url "https://www.sulzer.de/de/standorte/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

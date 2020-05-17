@@ -1,11 +1,9 @@
-# Selenium Webdriver and Mocha
-- Install dependencies: `npm install`
 
-## Run example with selenium webdriver
-- Go to `cd ./node_modules/.bin`
-- Type command: `node ./../../example.js`
+# Running tests with codeceptjs
 
-## Run example with mocha framework
-- Go to `cd ./node_modules/.bin`
-- Type command: `node mocha ./../../example-with-mocha.js --timeout 10000`
-
+## Run tests
+- Istall dependencies: `npm install`
+- Run tests with mochawesome: `npm run test:mochawesome`
+- Generate allure folder: `allure generate -o allure-results`
+- Run tests with allure: `npm run test:allure`
+- Serve allure report: `npm run report`

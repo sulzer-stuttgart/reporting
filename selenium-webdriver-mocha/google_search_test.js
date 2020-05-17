@@ -2,7 +2,7 @@ const { Builder, By, Key, until } = require('selenium-webdriver');
 const { expect } = require('chai');
 const chromedriver = require('chromedriver');
 
-describe('Example Test with Mocha and Chai', () => {
+describe('Search sulzer gmbh on google', () => {
     const driver = new Builder()
     .forBrowser('chrome').build();
 
