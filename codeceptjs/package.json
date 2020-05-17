@@ -1,0 +1,24 @@
+{
+  "name": "codeceptjs-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx codeceptjs run --steps",
+    "test:mochawesome": "npx codeceptjs run --steps --reporter mochawesome",
+    "test:allure": "npx codeceptjs run --steps  --plugins allure",
+    "report": "allure serve ./allure-results"
+  },
+  "keywords": [],
+  "author": "Mustafa Masetic",
+  "license": "ISC",
+  "devDependencies": {
+    "codeceptjs": "^2.6.0",
+    "mochawesome": "^6.1.1",
+    "webdriver": "^6.0.13"
+  },
+  "dependencies": {
+    "mocha-allure-reporter": "^1.4.0",
+    "selenium-standalone": "^6.17.0"
+  }
+}

@@ -1,0 +1,56 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1589712243133' stop='1589712253981'>
+    <name>testing with codeceptjs:</name>
+    <title>testing with codeceptjs:</title>
+    <test-cases>
+        <test-case start='1589712243134' status='failed' stop='1589712253381'>
+            <name>should search for "sulzer gmbh" and click on link with a name "Unternehmen"</name>
+            <title>should search for "sulzer gmbh" and click on link with a name "Unternehmen"</title>
+            <labels>
+                <label name='testType' value='screenshotDiff'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1589712244156' status='passed' stop='1589712244926'>
+                    <name>I am on page "https://google.com"</name>
+                    <title>I am on page "https://google.com"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1589712244926' status='passed' stop='1589712244952'>
+                    <name>I wait for visible {"name":"q"}, 5</name>
+                    <title>I wait for visible {"name":"q"}, 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1589712244952' status='passed' stop='1589712245089'>
+                    <name>I fill field {"name":"q"}, "sulzer gmbh"</name>
+                    <title>I fill field {"name":"q"}, "sulzer gmbh"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1589712245089' status='passed' stop='1589712248377'>
+                    <name>I press key "Enter"</name>
+                    <title>I press key "Enter"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1589712248377' status='failed' stop='1589712253380'>
+                    <name>I wait for visible {xpath: .//a[contains(., 'Unterhnehmen')]}, 5</name>
+                    <title>I wait for visible {xpath: .//a[contains(., 'Unterhnehmen')]}, 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='d1f9e312-b932-45ec-b648-b8feafadb603-attachment.png' type='image/png' size='569146'/>
+            </attachments>
+            <failure>
+                <message>element ({xpath: .//a[contains(., 'Unterhnehmen')]}) still not visible after 5 sec</message>
+                <stack-trace>Error: element ({xpath: .//a[contains(., 'Unterhnehmen')]}) still not visible after 5 sec
+                    at /Users/mustafamasetic/sulzer-test-automation/reporting/codeceptjs/node_modules/webdriverio/build/commands/browser/waitUntil.js:30:15
+                    at async Browser.wrapCommandFn (/Users/mustafamasetic/sulzer-test-automation/reporting/codeceptjs/node_modules/@wdio/utils/build/shim.js:74:23)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

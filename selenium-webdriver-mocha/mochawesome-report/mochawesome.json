@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-05-17T09:02:39.663Z",
+    "end": "2020-05-17T09:02:47.810Z",
+    "duration": 8147,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "79061351-ce75-4438-8918-7dc8aebc0bcf",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "59bef358-5cf5-41bc-959b-5ac576a86e6b",
+          "title": "Example Test with Mocha and Chai",
+          "fullFile": "/Users/mustafamasetic/sulzer-test-automation/reporting/selenium-webdriver-mocha/example-with-mocha.js",
+          "file": "/example-with-mocha.js",
+          "beforeHooks": [],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook",
+              "fullTitle": "Example Test with Mocha and Chai \"after all\" hook",
+              "timedOut": false,
+              "duration": 52,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.quit()",
+              "err": {},
+              "uuid": "35603d10-f37e-4efb-81af-1b897c55f607",
+              "parentUUID": "59bef358-5cf5-41bc-959b-5ac576a86e6b",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should search for \"sulzer gmbh\" and click on link with a name \"Standorte\"",
+              "fullTitle": "Example Test with Mocha and Chai should search for \"sulzer gmbh\" and click on link with a name \"Standorte\"",
+              "timedOut": false,
+              "duration": 8062,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get('https://www.google.com');\nawait driver.sleep(2000);\nawait driver.findElement(By.name('q')).sendKeys('sulzer gmbh', Key.ENTER);\nawait driver.wait(until.elementLocated(By.id('search')));\nawait driver.findElement(By.linkText('Standorte')).click();\nconst title = await driver.getTitle();\nexpect(title).to.equal('Unsere Standorte - Wir sind weltweit für Sie da');",
+              "err": {},
+              "uuid": "32d71795-fbd9-4212-90f6-ed13f8f31e7c",
+              "parentUUID": "59bef358-5cf5-41bc-959b-5ac576a86e6b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "32d71795-fbd9-4212-90f6-ed13f8f31e7c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8062,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 15000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 15000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.1.0"
+    }
+  }
+}

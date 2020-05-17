@@ -1,0 +1,174 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-05-17T10:01:52.862Z",
+    "end": "2020-05-17T10:02:00.388Z",
+    "duration": 7526,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c36f8d41-c7cf-4bcb-be44-c1fbe9dc0bdf",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1787a412-9421-4aaa-a49b-5f35c9ca0551",
+          "title": "testing with codeceptjs",
+          "fullFile": "/Users/mustafamasetic/sulzer-test-automation/reporting/codeceptjs/example_test.js",
+          "file": "/example_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite",
+              "fullTitle": "testing with codeceptjs \"before all\" hook: codeceptjs.beforeSuite",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "b2b45120-41fd-496f-9e6f-f5bf4c05fdb3",
+              "parentUUID": "1787a412-9421-4aaa-a49b-5f35c9ca0551",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before",
+              "fullTitle": "testing with codeceptjs \"before each\" hook: codeceptjs.before",
+              "timedOut": false,
+              "duration": 1075,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "d58abecb-734b-4e35-965d-71a2e382631d",
+              "parentUUID": "1787a412-9421-4aaa-a49b-5f35c9ca0551",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite",
+              "fullTitle": "testing with codeceptjs \"after all\" hook: codeceptjs.afterSuite",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "2ed7cd92-efc2-425c-92a1-eaeccb1a97c9",
+              "parentUUID": "1787a412-9421-4aaa-a49b-5f35c9ca0551",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs",
+              "fullTitle": "testing with codeceptjs \"after each\" hook: finalize codeceptjs",
+              "timedOut": false,
+              "duration": 54,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "044dc583-499b-4a8f-b4e6-9d930278f207",
+              "parentUUID": "1787a412-9421-4aaa-a49b-5f35c9ca0551",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should search for \"sulzer gmbh\" and click on link with a name \"Standorte\"",
+              "fullTitle": "testing with codeceptjs: should search for \"sulzer gmbh\" and click on link with a name \"Standorte\"",
+              "timedOut": false,
+              "duration": 6392,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "I.amOnPage('https://google.com');\nI.waitForVisible({name: 'q'}, 5);\nI.fillField({name: 'q'}, 'sulzer gmbh');\nI.pressKey('Enter');\nI.waitForVisible(locate('a').withText('Standorte'), 5);\nI.click(locate('a').withText('Standorte'));\nI.seeInCurrentUrl('https://www.sulzer.de/de/standorte/');",
+              "err": {},
+              "uuid": "2dfff4b3-2cf4-4398-b772-88e49089e04c",
+              "parentUUID": "1787a412-9421-4aaa-a49b-5f35c9ca0551",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2dfff4b3-2cf4-4398-b772-88e49089e04c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6392,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.2.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {},
+      "version": "5.1.0"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "selenium-webdriver-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/.bin/mocha ./example-with-mocha.js --timeout=15000",
+    "test:allure": "node ./node_modules/.bin/mocha ./example-with-mocha.js --reporter mocha-allure-reporter --timeout=15000",
+    "test:mochawesome": "node ./node_modules/.bin/mocha ./example-with-mocha.js --reporter mochawesome --timeout=15000",
+    "report": "allure serve ./allure-results"
+  },
+  "author": "Mustafa Masetic",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chromedriver": "^80.0.1",
+    "mocha": "^7.1.1"
+  },
+  "devDependencies": {
+    "mocha-allure-reporter": "^1.4.0",
+    "mochawesome": "^6.1.1"
+  }
+}
