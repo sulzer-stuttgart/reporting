@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx codeceptjs run --steps",
-    "test:mochawesome": "npx codeceptjs run --steps --reporter mochawesome",
-    "test:allure": "npx codeceptjs run --steps  --plugins allure",
+    "test:mochawesome": "npx codeceptjs run-workers --suites 5 --reporter mochawesome",
+    "test:allure": "npx codeceptjs run-workers --suites 5  --plugins allure",
     "report": "allure serve ./allure-results",
     "server:install": "node_modules/selenium-standalone/bin/selenium-standalone install",
     "server:start": "node_modules/selenium-standalone/bin/selenium-standalone start"
