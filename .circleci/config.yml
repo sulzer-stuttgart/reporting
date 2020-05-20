@@ -6,7 +6,7 @@ jobs:
     executor:
       name: node/default
     steps:
-      - run: apt-get install default-jre
+      - run: sudo apt-get install default-jre
       - checkout
       - node/with-cache:
           steps:
