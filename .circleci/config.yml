@@ -12,7 +12,7 @@ jobs:
             - run: cd selenium-webdriver-mocha && npm install
             - run:
                 command: cd selenium-webdriver-mocha && ls && cat package.json
-            - run: cd selenium-webdriver-mocha && npm run test:allure
+            - run: cd selenium-webdriver-mocha && npm test:allure
 workflows:
     build-and-test:
       jobs:
