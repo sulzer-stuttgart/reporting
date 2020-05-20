@@ -11,7 +11,7 @@ jobs:
           command: curl -O http://selenium-release.storage.googleapis.com/3.5/selenium-server-standalone-3.5.3.jar
       - run:
           name: Download Chrome
-          command: curl -O https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          command: curl -O https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux_x64%2F770581%2Fchrome-linux.zip?generation=1589986122953922&alt=media
       - run:
           name: Download Chromedriver
           command: curl -O https://chromedriver.storage.googleapis.com/83.0.4103.39/chromedriver_linux64.zip
