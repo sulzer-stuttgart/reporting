@@ -7,6 +7,7 @@ jobs:
       name: node/default
     steps:
       - run: sudo apt-get install default-jre
+      - run: sudo apt-get install chromium-browser
       - run: sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
       - run: sudo dpkg -i google-chrome-stable_current_amd64.deb; apt-get -fy install
       - checkout
