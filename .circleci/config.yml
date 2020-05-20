@@ -9,7 +9,7 @@ jobs:
       - checkout
       - node/with-cache:
           steps:
-            - run: cd selenium-webdriver-mocha && npm install && npm run test:allure
+            - run: cd selenium-webdriver-mocha && npm install
             - run:
                 command: ls && cat README.md
             - run: cd selenium-webdriver-mocha && npm run test:allure
