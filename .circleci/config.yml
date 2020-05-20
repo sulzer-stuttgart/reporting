@@ -8,7 +8,6 @@ jobs:
       docker:
         - image: selenium/standalone-chrome:3.1.0
         - image: node
-      - checkout
       - node/with-cache:
       - run: cd selenium-webdriver-mocha && npm install
       - run:
