@@ -1,7 +1,7 @@
 const { Builder, By, Key, until } = require('selenium-webdriver');
 const { expect } = require('chai');
 const chromedriver = require('chromedriver');
-const chrome    = require('selenium-webdriver/chrome')
+const chrome = require('selenium-webdriver/chrome')
 
 describe('Search sulzer gmbh on google', () => {
     const driver = new Builder()
@@ -10,7 +10,6 @@ describe('Search sulzer gmbh on google', () => {
     .build();
 
     it('should search for "sulzer gmbh" and click on link with a name "Standorte"', async () => {
-        allure.severity(allure.SEVERITY.BLOCKER);
         await driver.get('https://www.google.com');
         await driver.sleep(2000);
         await driver.findElement(By.name('q')).sendKeys('sulzer gmbh', Key.ENTER);
@@ -23,7 +22,6 @@ describe('Search sulzer gmbh on google', () => {
     });
 
     it('should search for "sulzer gmbh kontakt stuttgart" and click on link with a name "Kontakt"', async () => {
-        allure.severity(allure.SEVERITY.TRIVIAL);
         await driver.get('https://www.google.com');
         await driver.sleep(2000);
         await driver.findElement(By.name('q')).sendKeys('sulzer gmbh', Key.ENTER);
@@ -36,7 +34,6 @@ describe('Search sulzer gmbh on google', () => {
     });
 
     it('should search for "sulzer gmbh" and click on link with a name "Karriere"', async () => {
-        allure.severity(allure.SEVERITY.CRITICAL);
         await driver.get('https://www.google.com');
         await driver.sleep(2000);
         await driver.findElement(By.name('q')).sendKeys('sulzer gmbh', Key.ENTER);
@@ -49,7 +46,6 @@ describe('Search sulzer gmbh on google', () => {
     });
 
     it.skip('should search for "sulzer gmbh" and click on link with a name "Stuttgart"', async () => {
-        allure.severity(allure.SEVERITY.BLOCKER);
         await driver.get('https://www.google.com');
         await driver.sleep(2000);
         await driver.findElement(By.name('q')).sendKeys('sulzer gmbh', Key.ENTER);
@@ -62,7 +58,6 @@ describe('Search sulzer gmbh on google', () => {
     });
 
     it('should search for "sulzer gmbh" and click on link with a name "Unternehmen"', async () => {
-        allure.severity(allure.SEVERITY.MINOR);
         await driver.get('https://www.google.com');
         await driver.sleep(2000);
         await driver.findElement(By.name('q')).sendKeys('sulzer gmbh', Key.ENTER);
