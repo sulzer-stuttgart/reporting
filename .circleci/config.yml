@@ -14,7 +14,7 @@ jobs:
           command: curl -O https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux_x64%2F770581%2Fchrome-linux.zip?generation=1589986122953922&alt=media
       - run:
           name: Download Chromedriver
-          command: curl -O https://chromedriver.storage.googleapis.com/83.0.4103.39/chromedriver_linux64.zip
+          command: curl -O https://chromedriver.storage.googleapis.com/81.0.4044.138/chromedriver_linux64.zip
       - run:
           name: Start Selenium
           command: java -jar selenium-server-standalone-3.5.3.jar -log test-reports/selenium.log
